@@ -1,12 +1,16 @@
 <script lang="ts" setup></script>
 
 <template>
-    <section class="__hero"></section>
+    <CommonBlock>
+        <div class="flex flex-wrap gap-x-8 gap-y-4 justify-between items-end">
+            <h1 class="uppercase font-bold text-3xl sm:text-5xl lg:text-6xl">
+                Павел
+                <br />
+                Сапожников
+            </h1>
+            <HeroContacts />
+        </div>
+    </CommonBlock>
 </template>
 
-<style lang="scss" scoped>
-.__hero {
-    @apply bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5 rounded-3xl border-2;
-    height: calc(100vh - 7rem);
-}
-</style>
+<style lang="scss" scoped></style>
