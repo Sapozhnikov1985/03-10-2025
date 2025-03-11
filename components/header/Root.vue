@@ -1,13 +1,13 @@
 <script lang="ts" setup></script>
 
 <template>
-    <header
-        class="flex items-center gap-4 justify-between p-4 border-2 rounded-3xl bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5"
-    >
-        <div class="branding"></div>
-        <nav class="hidden sm:flex gap-4 items-center"></nav>
-        <HeaderColorSwitcher />
-    </header>
+    <div class="relative">
+        <HeaderContent class="pointer-events-none opacity-0" />
+        <HeaderContent
+            class="fixed z-10 top-6"
+            style="width: min(calc(100% - 2rem), 1000px - 2rem)"
+        />
+    </div>
 </template>
 
 <style lang="scss" scoped></style>
