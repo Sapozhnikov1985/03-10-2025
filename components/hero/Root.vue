@@ -11,7 +11,7 @@
             <h1 class="uppercase font-bold text-3xl sm:text-5xl lg:text-6xl">
                 Павел
                 <br />
-                Подвохов
+                Сапожников
             </h1>
             <HeroContacts />
         </div>
