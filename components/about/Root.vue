@@ -16,10 +16,12 @@ import InteractiveGridPattern from "@/components/ui/interactive-grid-pattern/Int
         <div class="flex flex-wrap gap-4">
             <ClientOnly>
                 <AboutCard src="/media/cards/1.jpg">
-                    <template #title>Паллиативный-онкопсихолог</template>
-                    <template #description>15 лет практики </template>
+                    <template #title>
+                        <span class="text-3xl">Паллиативный онкопсихолог</span>
+                    </template>
+                    <template #description> 15 лет практики </template>
                 </AboutCard>
-                <AboutCard src="/media/cards/1.jpg">
+                <AboutCard src="/media/cards/2.jpg">
                     <template #title
                         >10 лет - работы в Федеральных больницах.
                     </template>

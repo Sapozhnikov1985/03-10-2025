@@ -5,9 +5,9 @@ defineProps<{
 </script>
 
 <template>
-    <CardContainer>
+    <CardContainer class="basis-1/2">
         <CardBody
-            class="w-full group/card relative rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
+            class="group/card flex flex-col relative rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
         >
             <CardItem
                 :translate-z="50"
@@ -22,11 +22,15 @@ defineProps<{
             >
                 <slot name="description" />
             </CardItem>
-            <CardItem v-if="src" :translate-z="100" class="mt-4 w-full">
+            <CardItem
+                v-if="src"
+                :translate-z="100"
+                class="w-full h-min mt-auto"
+            >
                 <img
                     :src="src"
-                    class="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
-                    alt="thumbnail"
+                    class="w-full aspect-video rounded-xl object-cover group-hover/card:shadow-xl"
+                    alt="Фотография"
                 />
             </CardItem>
         </CardBody>
