@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface BlockProps {
     class?: HTMLAttributes["class"];
+    aosDelay?: string;
 }
 
 const props = defineProps<BlockProps>();
@@ -14,7 +15,11 @@ const cardStyle =
 
 <template>
     <ClientOnly>
-        <section data-aos="fade-up" :class="cn(cardStyle, props.class)">
+        <section
+            data-aos="fade-up"
+            :data-aos-delay="props.aosDelay"
+            :class="cn(cardStyle, props.class)"
+        >
             <slot />
         </section>
         <template #fallback>

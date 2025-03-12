@@ -3,10 +3,8 @@
 <template>
     <div class="__home">
         <HeroRoot />
-        <CommonBlock>
-            <h2>Обо мне</h2>
-        </CommonBlock>
-        <BlogRoot />
+        <AboutRoot aos-delay="50" />
+        <BlogRoot aos-delay="100" />
     </div>
 </template>
 
