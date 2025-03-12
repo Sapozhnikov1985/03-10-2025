@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import InteractiveGridPattern from "../ui/interactive-grid-pattern/InteractiveGridPattern.vue";
+import InteractiveGridPattern from "@/components/ui/interactive-grid-pattern/InteractiveGridPattern.vue";
 </script>
 
 <template>
-    <CommonBlock class="h-[500px]">
-        <div class="grid">
+    <CommonBlock>
+        <div class="effect">
             <img
                 src="https://picsum.photos/600/800?random=6"
                 alt="Фотография"
@@ -13,11 +13,27 @@ import InteractiveGridPattern from "../ui/interactive-grid-pattern/InteractiveGr
             <InteractiveGridPattern />
         </div>
         <h2>Обо мне</h2>
+        <div class="flex flex-wrap gap-4">
+            <ClientOnly>
+                <AboutCard src="/media/cards/1.jpg">
+                    <template #title>Паллиативный-онкопсихолог</template>
+                    <template #description>15 лет практики </template>
+                </AboutCard>
+                <AboutCard src="/media/cards/1.jpg">
+                    <template #title
+                        >10 лет - работы в Федеральных больницах.
+                    </template>
+                    <template #description
+                        >Последнее место работы онкологическое отделение СПБГУ
+                    </template>
+                </AboutCard>
+            </ClientOnly>
+        </div>
     </CommonBlock>
 </template>
 
 <style lang="scss" scoped>
-.grid {
-    @apply [mask-image:radial-gradient(350px_circle_at_center,white,transparent)] inset-0 h-[100%] skew-y-12 relative;
+.effect {
+    @apply aspect-video [mask-image:radial-gradient(350px_circle_at_center,white,transparent)] inset-0  skew-y-12 relative;
 }
 </style>
