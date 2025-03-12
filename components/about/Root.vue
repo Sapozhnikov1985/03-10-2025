@@ -8,7 +8,7 @@ import InteractiveGridPattern from "@/components/ui/interactive-grid-pattern/Int
             <img
                 src="https://picsum.photos/600/800?random=6"
                 alt="Фотография"
-                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full aspect-square object-cover w-48 z-10"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full aspect-square object-cover w-48 z-10 shadow-2xl"
             />
             <InteractiveGridPattern />
         </div>
