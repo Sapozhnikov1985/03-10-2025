@@ -3,6 +3,9 @@
 <template>
     <div class="__home">
         <HeroRoot />
+        <CommonBlock>
+            <h2>Обо мне</h2>
+        </CommonBlock>
         <BlogRoot />
     </div>
 </template>

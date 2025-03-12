@@ -20,6 +20,7 @@
 		"embla-carousel-vue": "^8.5.2",
 		"lucide-vue-next": "^0.479.0",
 		"nuxt": "^3.16.0",
+		"nuxt-aos": "1.2.5",
 		"reka-ui": "^2.0.2",
 		"sass": "^1.85.1",
 		"shadcn-nuxt": "1.0.3",
