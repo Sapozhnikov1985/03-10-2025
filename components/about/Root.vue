@@ -12,21 +12,21 @@ import InteractiveGridPattern from "@/components/ui/interactive-grid-pattern/Int
             />
             <InteractiveGridPattern />
         </div>
-        <h2>Обо мне</h2>
-        <div class="flex flex-wrap gap-4">
+        <h2 class="mb-4">Обо мне</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-full">
             <ClientOnly>
-                <AboutCard src="/media/cards/1.jpg">
+                <AboutCard src="/media/cards/1.jpg" class="w-full">
                     <template #title>
                         <span class="text-3xl">Паллиативный онкопсихолог</span>
                     </template>
-                    <template #description> 15 лет практики </template>
+                    <template #description>15 лет практики</template>
                 </AboutCard>
-                <AboutCard src="/media/cards/2.jpg">
-                    <template #title
-                        >10 лет - работы в Федеральных больницах.
+                <AboutCard src="/media/cards/2.jpg" class="w-full">
+                    <template #title>
+                        10 лет - работы в Федеральных больницах.
                     </template>
-                    <template #description
-                        >Последнее место работы онкологическое отделение СПБГУ
+                    <template #description>
+                        Последнее место работы онкологическое отделение СПБГУ
                     </template>
                 </AboutCard>
             </ClientOnly>
