@@ -9,5 +9,13 @@ export default defineContentConfig({
                 cover: z.string(),
             }),
         }),
+        videos: defineCollection({
+            type: "data",
+            source: "videos/**/*.json",
+            schema: z.object({
+                name: z.string(),
+                id: z.number(),
+            }),
+        }),
     },
 });
