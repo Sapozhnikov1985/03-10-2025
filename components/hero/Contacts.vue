@@ -1,20 +1,18 @@
-<script lang="ts" setup>
-import ShimmerButton from "@/components/ui/shimmer-button/ShimmerButton.vue";
-</script>
+<script lang="ts" setup></script>
 
 <template>
     <nav class="flex items-center gap-4 h-fit">
         <NuxtLink to="https://t.me/psihologiyagorevaniya" external>
-            <ShimmerButton size="icon" class="text-xl sm:text-2xl p-4">
+            <Button size="icon" class="text-xl sm:text-2xl p-3">
                 <Icon class="text-white" name="icon-park-outline:telegram" />
                 <span class="sr-only">Написать в телеграм</span>
-            </ShimmerButton>
+            </Button>
         </NuxtLink>
         <NuxtLink to="https://wa.me/+79122899048" external>
-            <ShimmerButton size="icon" class="text-xl sm:text-2xl p-4">
+            <Button size="icon" class="text-xl sm:text-2xl p-3">
                 <Icon class="text-white" name="tabler:brand-whatsapp-filled" />
                 <span class="sr-only">Написать в ватсапп</span>
-            </ShimmerButton>
+            </Button>
         </NuxtLink>
     </nav>
 </template>

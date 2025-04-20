@@ -21,6 +21,6 @@
 <style lang="scss">
 .hero {
     @apply overflow-hidden p-6 sm:p-12;
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 9rem);
 }
 </style>

@@ -10,7 +10,7 @@ interface BlockProps {
 const props = defineProps<BlockProps>();
 
 const cardStyle =
-    "bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5 rounded-3xl border-2 flex flex-col justify-end p-4 sm:p-6";
+    "bg-[#FFFFFF66] rounded-3xl border-2 flex flex-col justify-end p-4 sm:p-6 shadow-lg";
 </script>
 
 <template>
@@ -18,6 +18,7 @@ const cardStyle =
         <section
             data-aos="fade-up"
             :data-aos-delay="props.aosDelay"
+            :data-aos-duration="1000"
             :class="cn(cardStyle, props.class)"
         >
             <slot />

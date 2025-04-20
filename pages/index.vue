@@ -2,14 +2,14 @@
 
 <template>
     <div class="__home">
-        <HeroRoot />
-        <AboutRoot aos-delay="50" />
-        <BlogRoot aos-delay="100" />
+        <HeroRoot aos-delay="500" />
+        <AboutRoot aos-delay="200" />
+        <BlogRoot aos-delay="200" />
     </div>
 </template>
 
 <style lang="scss" scoped>
 .__home {
-    @apply space-y-2;
+    @apply space-y-4;
 }
 </style>

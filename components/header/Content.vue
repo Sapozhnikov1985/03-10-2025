@@ -9,12 +9,11 @@
             <ClientOnly>
                 <MorphingText
                     class="text-[100pt]"
-                    :texts="['САМАЯ', 'ЛУЧШАЯ', 'ПОМОЩЬ']"
+                    :texts="['ПАВЕЛ', 'САПОЖНИКОВ']"
                 />
             </ClientOnly>
         </NuxtLink>
         <nav class="hidden sm:flex gap-4 items-center"></nav>
-        <HeaderColorSwitcher />
     </header>
 </template>
 
