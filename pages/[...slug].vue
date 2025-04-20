@@ -2,7 +2,7 @@
 const { path } = useRoute();
 
 const { data } = await useAsyncData(() =>
-    queryCollection("content").path(path).first()
+    queryCollection("articles").path(path).first()
 );
 
 if (!data.value)
