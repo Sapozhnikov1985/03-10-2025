@@ -22,7 +22,7 @@
 		"lucide-vue-next": "^0.479.0",
 		"nuxt": "^3.16.2",
 		"nuxt-aos": "1.2.5",
-		"reka-ui": "^2.0.2",
+		"reka-ui": "^2.2.0",
 		"remove": "^0.1.5",
 		"sass": "^1.85.1",
 		"shadcn-nuxt": "1.0.3",
