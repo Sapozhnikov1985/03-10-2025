@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 defineProps<{
     name: string;
+    cover: string;
     vid: string;
 }>();
 </script>
@@ -12,8 +13,8 @@ defineProps<{
                 <CardHeader class="space-y-2 flex justify-center h-full">
                     <img
                         class="absolute w-full h-full left-0 top-0 object-cover object-center -z-10 opacity-80 vid-img transition duration-500"
-                        src="/media/vidcard.jpg"
-                        alt="Фон"
+                        :src="cover"
+                        :alt="name"
                     />
                     <CardTitle class="text-background">{{ name }}</CardTitle>
                 </CardHeader>

@@ -14,6 +14,7 @@ export default defineContentConfig({
             source: "videos/**.yml",
             schema: z.object({
                 name: z.string(),
+                cover: z.string(),
                 vid: z.string(),
             }),
         }),

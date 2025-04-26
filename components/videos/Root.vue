@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const { data: vids } = await useAsyncData("vids", () => {
-    return queryCollection("videos").select("name", "vid").all();
+    return queryCollection("videos").select("name", "vid", "cover").all();
 });
 </script>
 
@@ -10,7 +10,11 @@ const { data: vids } = await useAsyncData("vids", () => {
         <Carousel class="mx-12">
             <CarouselContent>
                 <CarouselItem v-for="vid in vids" class="vid-item">
-                    <CommonVideoDialog :vid="vid.vid" :name="vid.name" />
+                    <CommonVideoDialog
+                        :cover="vid.cover"
+                        :vid="vid.vid"
+                        :name="vid.name"
+                    />
                 </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
