@@ -6,12 +6,7 @@
         style="background-color: hsl(var(--muted) / 0.5)"
     >
         <NuxtLink to="/" class="branding">
-            <ClientOnly>
-                <MorphingText
-                    class="text-[100pt]"
-                    :texts="['ПАВЕЛ', 'САПОЖНИКОВ']"
-                />
-            </ClientOnly>
+            <img src="/favicon.svg" alt="Лого" class="w-12 p-2 invert" />
         </NuxtLink>
         <nav class="hidden sm:flex gap-4 items-center"></nav>
     </header>
